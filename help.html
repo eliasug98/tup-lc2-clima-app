@@ -7,37 +7,44 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
+    <link rel="stylesheet" href="./img/nube.png" type="imagen/x-icon">
 </head>
 
 <body>
     <header>
         <h1>
+            <img src="/tup-lc2-clima-app/img/nube.png" alt="">
             <span>Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Clima</a></li>
-                <li><a href="/add-city.html">Agregar Ciudad</a></li>
-                <li class="current-page"><a href="/help.html">Ayuda</a></li>
+                <li><a href="/tup-lc2-clima-app/index.html">Clima</a></li>
+                <li><a href="/tup-lc2-clima-app/add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="/tup-lc2-clima-app/help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
         <h2>Ayuda Clima App V.1.0</h2>
+        <!-- <div class="centrar">
+            <div class="parrafos-main"> -->
+                <p>
+                    Esta app te permite consultar el clima de una ciudad en particular
+                    utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
+                </p>
+                <p>
+                    Para poder consultar el clima, primero debera <a href="">Agregar una ciudad</a>  y
+                    luego seleccionar la Ciudad en cuestion desde la pagina <a href="">Clima</a> .
+                </p>
+            <!-- </div>
+        </div> -->
 
-            <p>
-                Esta app te permite consultar el clima de una ciudad en particular
-                utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
-            </p>
-            <p>
-                Para poder consultar el clima, primero debera <a href="">Agregar una ciudad</a>  y
-                luego seleccionar la Ciudad en cuestion desde la pagina <a href="">Clima</a> .
-            </p>
         
         <section>
             <form action="">
-                <ul>
+                <ul class="grid-li">
                     <li>
                         <label for="">Nombre: </label>
                         <input type="text" name="" id="">
@@ -50,9 +57,14 @@
                         <label for="">Mensaje: </label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </li>
-                    <button>Limpiar</button>
-                    <button>Enviar</button>
+                    <div class="centrar">
+                        <button class="boton">Limpiar</button>
+                        <button class="boton">Enviar</button>                        
+                    </div>
                 </ul>
+                <section id="section-help-result">
+                    <p>Ingrese un Email valido</p>
+                </section>
             </form>
         </section>
     </main>

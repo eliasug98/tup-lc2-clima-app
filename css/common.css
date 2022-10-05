@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
- Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 
 }
 
@@ -33,11 +32,23 @@ a {
     -webkit-user-select: none;
 }
 
+.boton {
+    padding: 9px;
+    border-radius: 5px;
+    background-color: var(--color-theme);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; 
+
 }
 
 nav>ul {
@@ -64,6 +75,8 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -73,6 +86,11 @@ main {
     padding: 16px;
     padding-bottom: 60px;
     height: calc(100% - 120px);
+
+}
+
+main p {
+    text-align: start;
 }
 
 h1 {
@@ -105,7 +123,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -133,4 +151,8 @@ main p {
         padding-bottom: 20px;
     }
 }
+
+
+
+
 

@@ -7,18 +7,21 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
+    <link rel="stylesheet" href="./img/nube.png" type="imagen/x-icon">
 </head>
 
 <body>
     <header>
         <h1>
+            <img src="/tup-lc2-clima-app/img/nube.png" alt="">
             <span>Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Clima</a></li>
-                <li class="current-page"><a href="/add-city.html">Agregar Ciudad</a></li>
-                <li><a href="/help.html">Ayuda</a></li>
+                <li><a href="/tup-lc2-clima-app/index.html">Clima</a></li>
+                <li class="current-page"><a href="/tup-lc2-clima-app/add-city.html">Agregar Ciudad</a></li>
+                <li><a href="/tup-lc2-clima-app/help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
@@ -26,21 +29,22 @@
     <main>
         <h2>Agregar Ciudad</h2>
         
-        <section>
+        <section id="form-city-list">
             <form action="">
-                <ul>
-                    <li>
-                        <label for="">Ingrese la cuidad a agregar</label>
-                        <input type="text" name="" id="">
-                    </li>
-                    <li>
-                        <button>Agregar</button>
-                    </li>
-                </ul>
+                
+                <label class="ingresar-ciudad" for="">Ingrese la cuidad a agregar:</label>
+                <input type="text" name="" id="">
 
 
-
+                <div class="boton-agregar">
+                    <button class="boton">Agregar</button>
+                </div>
             </form>
+        </section>
+        <section id="section-weather-result">
+            <p>Ciudad agregada con éxito</p>
+            <p>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
+            <p>La ciudad ingresada ya se encuentra almacenada</p>
         </section>
     </main>
     <footer>
